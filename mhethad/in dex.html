@@ -1,0 +1,29 @@
+<script>
+    class Bank{
+        constructor(name,account,balance,trans,ifsc="am123",branch="amreli"){
+            this.name=name,
+            this.account=account,
+            this.balance=balance,
+            this.trans=trans,
+            this.ifsc=ifsc,
+            this.branch=branch  
+
+        }
+        info(){
+            console.log(`
+            name :${this.name},
+            account :${this.account},
+            balance :${this.balance},
+            ifsc :${this.ifsc},
+            branch :${this.branch}`);
+        }
+        transtions(){
+            console.log(`your last 5 transtions ${this.trans}`)
+        }
+    }
+    let ram = new Bank("ram",123,1000,[10,20,30,40,50]);
+    ram.info()
+    ram.transtions()
+
+
+</script>
